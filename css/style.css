@@ -9,6 +9,12 @@
 
 html {
 	font-size: 62.5%;
+     box-sizing: border-box; /*  https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+}
+/*  https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/*  '*': selecciona todos los elementos del html, la coma ','  se usa para nombrar varios elementos con las mismas caracterisitcas */
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -27,7 +33,7 @@ body {
 }
 
 .contenedor {
-	width: 120rem;
+	max-width: 120rem; /* se usa para evitar el scroll cuando se adapta el tmaño */
 	/*se pone auto para centralizar la nav */
 	margin: 0 auto; /* en margin se define como rigth top left bottom */
 }
@@ -38,7 +44,16 @@ body {
 .navegacion-principal {
 	/* flexbox */
 	display: flex;
-	justify-content: space-between; /* inidicamos que se separen usando la propiedad space */
+	flex-direction: column;
+	align-items: center;
+}
+/* resonsive con media queries */
+/* 768 es para una tablet -- 468 celular */
+@media (min-width: 768px) {
+	.navegacion-principal {
+		flex-direction: row;
+		justify-content: space-between; /* inidicamos que se separen usando la propiedad space */
+	}
 }
 
 .navegacion-principal a {
@@ -53,6 +68,15 @@ body {
 .navegacion-principal a:hover {
 	background-color: var(--primario);
 	color: var(--oscuro);
+}
+
+/* agrega la imagen */
+.hero {
+	background-image: url('../img/hero.jpg');
+	background-repeat: no-repeat; /* evita que se repita la imagen */
+	background-size: cover; /* adapta la imagen al espacio */
+	height: 410px;
+    padding: 20px; /* se baja el texto: el padding total da 40px */
 }
 
 /* el punto . es para las calses
