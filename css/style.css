@@ -1,0 +1,63 @@
+/* Custom properties ( variables de css) */
+:root {
+	--blanco: #ffffff;
+	--primario: #ffc107;
+	--secundario: #0097a7;
+	--gris: #757575;
+	--oscuro: #212121;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 16px; /* 1 rem = 10px */
+	font-family: 'Krub', sans-serif; /* aplica la fuente en toda la pagina  */
+}
+
+.titulo {
+	/* color: var(--blanco); */
+	font-size: 3.8rem; /* 1 rem = 10px */
+	text-align: center;
+}
+
+.titulo span {
+	font-size: 2rem;
+}
+
+.contenedor {
+	width: 120rem;
+	/*se pone auto para centralizar la nav */
+	margin: 0 auto; /* en margin se define como rigth top left bottom */
+}
+.nav-bg {
+	background-color: var(--secundario);
+}
+
+.navegacion-principal {
+	/* flexbox */
+	display: flex;
+	justify-content: space-between; /* inidicamos que se separen usando la propiedad space */
+}
+
+.navegacion-principal a {
+	color: var(--blanco);
+	padding: 1rem; /* agrega mas espacio de afuera hacia adentro */
+	font-size: 2rem;
+	font-weight: bold; /* se pone en negritas */
+	text-decoration: none;
+}
+
+/* se cambia el color cuando se pone el cursor */
+.navegacion-principal a:hover {
+	background-color: var(--primario);
+	color: var(--oscuro);
+}
+
+/* el punto . es para las calses
+
+   el # es para los ids
+
+
+*/
