@@ -134,28 +134,32 @@
                     <fieldset>
                         <legend>Contactame llenando todos los campos</legend>
 
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" placeholder="Nombre">
-                        </div>
-                        <div>
-                            <label for="telefono">Telefono</label>
-                            <input type="tel" name="telefono" placeholder="Telefono">
-                        </div>
+                        <div class="contenedor-campos">
+                            <div class="campo">
+                                <label for="nombre">Nombre</label>
+                                <input class="input-text" type="text" name="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="telefono">Telefono</label>
+                                <input class="input-text" type="tel" name="telefono" placeholder="Telefono">
+                            </div>
 
-                        <div>
-                            <label for="correo">Correo</label>
-                            <input type="email" name="correo" placeholder="Mail">
+                            <div class="campo">
+                                <label for="correo">Correo</label>
+                                <input class="input-text" class="input-text" type="email" name="correo" placeholder="Mail">
+                            </div>
+
+
+                            <div class="campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="input-text" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                            </div>
+
                         </div>
+                        <!-- este es el contenedor de los campos -->
 
-
-                        <div>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                        </div>
-
-                        <div>
-                            <input type="submit" value="Enviar">
+                        <div class="alinear-derecha flex">
+                            <input class="boton w-sm-100" type="submit" value="Enviar">
                         </div>
 
 
@@ -165,7 +169,7 @@
 
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>Todos los derechos reservados. Kevin Echeverri</p>
         </footer>
 
