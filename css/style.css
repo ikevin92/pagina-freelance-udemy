@@ -202,6 +202,19 @@ h3 {
 	align-items: center;
 }
 
+/* contacto */
+.formulario {
+	background-color: var(--gris);
+	width: min(60rem, 100%); /* utilizar el valor mas pequeño */
+    margin: 0 auto; /* para centrar el formulario cuando el padre no es display flex */
+    
+
+}
+
+.formulario fieldset {
+	border: none;
+}
+
 /** NOTAS IMPORTANTES **/
 /* 
 el punto . es para las calses
